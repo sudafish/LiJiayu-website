@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lijiayu</title>
+    <script>
+      document.documentElement.classList.toggle("is-home-load", !window.location.hash || window.location.hash === "#");
+    </script>
+    <link rel="stylesheet" href="styles.css?v=20260726-music-video-moonstruck" />
+  </head>
+  <body>
+    <main class="home" aria-label="Lijiayu homepage">
+      <header class="site-header">
+        <a class="logo" href="#" aria-label="Lijiayu home">
+          <img src="assets/LiJiayu.png" alt="LiJiayu" />
+        </a>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <nav class="menu-overlay" aria-label="Main menu" aria-hidden="true">
+        <div class="menu-links">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a class="menu-work-link" href="#works">Works</a>
+          <a href="#contact">Contact</a>
+          <div class="language-switch" aria-label="Language switch">
+            <button class="current-language" type="button" data-lang="cn">CN</button>
+            <span>/</span>
+            <button type="button" data-lang="jp">JP</button>
+            <span>/</span>
+            <button type="button" data-lang="en" aria-disabled="true">EN</button>
+          </div>
+        </div>
+      </nav>
+
+      <footer class="site-copyright" aria-label="Copyright">Copyright (c) LIJIAYU. All right Reserved.</footer>
+
+      <div class="network-background" aria-hidden="true">
+        <canvas id="network-background-canvas"></canvas>
+      </div>
+
+      <section class="hero-stage" aria-label="今日运势">
+        <button class="omikuji-card" type="button" aria-label="抽取纸签" aria-pressed="false">
+          <svg
+            class="asset back-folder"
+            viewBox="0 0 308.962 356"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path
+              class="back-folder-shape"
+              d="M20.4564 321.019L20 29.0188C19.9896 22.384 25.3653 17 32 17H87.9393C91.6382 17 95.2646 18.0258 98.4154 19.9633L105.382 24.2474C108.533 26.1849 112.16 27.2106 115.859 27.2106H192.069H276.507C283.127 27.2106 288.496 32.5714 288.507 39.1912L288.962 320.981C288.973 327.616 283.597 333 276.962 333H154.728H32.4563C25.8362 333 20.4667 327.639 20.4564 321.019Z"
+            />
+          </svg>
+          <img class="asset paper paper-5" src="assets/paper-5.png" alt="" />
+          <img class="asset paper paper-4" src="assets/paper-4.png" alt="" />
+          <img class="asset paper paper-3" src="assets/paper-3.png" alt="" />
+          <img class="asset paper paper-2" src="assets/paper-2.png" alt="" />
+          <img class="asset paper paper-1" src="assets/paper-1.png" alt="" />
+          <span class="front-folder">
+            <span class="folder-copy">
+              <span class="folder-title">今日运势</span>
+              <span class="folder-subtitle">おみくじ、引いてみて！</span>
+            </span>
+          </span>
+        </button>
+      </section>
+
+      <section class="about-page" aria-label="About">
+        <div class="about-layout">
+          <figure class="about-portrait">
+            <img src="assets/about/profile.png" alt="李佳瑜 portrait" loading="lazy" decoding="async" />
+          </figure>
+
+          <article class="about-content">
+            <header class="about-intro">
+              <h1>李佳瑜</h1>
+              <p>
+                2001年，出生于中国深圳。<br />
+                本科毕业于浙江理工大学，主修数字媒体艺术的交互设计方向。<br />
+                研究生就读于京都艺术大学，专攻影像领域。目前主要进行多感官互动的影像装置创作。
+              </p>
+            </header>
+
+            <section class="about-panel">
+              <h2>实习/兼职经历</h2>
+              <div class="about-entry">
+                <div>
+                  <h3>腾讯科技（深圳）有限公司</h3>
+                  <p>于腾讯IEG虚拟偶像产品组，参与官方自媒体账号的内容制作，主要负责平面视觉设计与手绘创作，支持账号日常运营与视觉表达。参与IP的活动策划，协助完成活动创意、视觉物料与传播形式的设计。参与短视频、MV、音乐等制作的全流程，协助进行视频剪辑、素材收集与内容整理，提升多平台内容产出的完整度与效率。通过图文、视频、音乐等多元内容形式，丰富官方账号运营内容，提升虚拟偶像 IP 的传播力、内容多样性与粉丝粘性。</p>
+                </div>
+                <div class="about-entry-meta"><time>2021.07 ～ 2022.01</time><span>产品策划实习</span></div>
+              </div>
+              <div class="about-entry">
+                <div>
+                  <h3>东莞创基精密有限公司</h3>
+                  <p>辅助团队完成电子硬件产品设计相关任务，学习并使用 Photoshop、Creo、ProE 等设计工具，进行基础平面处理、产品效果调整与三维建模练习。通过参与实际项目，初步理解电子硬件产品从外观构思、结构建模到设计修改的基本流程。</p>
+                </div>
+                <div class="about-entry-meta"><time>2019.07 ～ 2019.08</time><span>产品设计实习</span></div>
+              </div>
+              <div class="about-entry">
+                <div>
+                  <h3>粉丝官方应援站</h3>
+                  <p>负责粉丝应援站相关视觉设计需求，包括周边物料、用于发布于SNS的长图、大屏广告等，并且在中国、韩国的商场、地铁站、公交站等线下公共空间实际投放。参与设计的盲盒等周边实现全部售罄，有效提升了粉丝参与度与社群粘性。</p>
+                </div>
+                <div class="about-entry-meta"><time>2020.01 ～ 至今</time><span>视觉设计兼职</span></div>
+              </div>
+              <div class="about-entry">
+                <div>
+                  <h3>ISCA</h3>
+                  <p>在大阪 VS. 艺术展览馆担任展览工作人员，参与展览现场的布展、撤展及作品陈列工作。面向观众进行作品解说，介绍体验方式与观看重点，提升观众对展览的理解。</p>
+                </div>
+                <div class="about-entry-meta"><time>2025.12 ～ 2025.12</time><span>展览工作兼职</span></div>
+              </div>
+              <div class="about-entry">
+                <div>
+                  <h3>Mother’s made</h3>
+                  <p>协助日本东京原创手作服饰设计品牌在中国小红书的账号运营，负责内容策划、拍摄、剪辑与发布。结合平台特点，发布品牌穿搭展示、生活方式类内容。通过持续内容输出，提升品牌提升在中国社交媒体平台的曝光度与关注度，积累了跨境品牌传播与新媒体运营经验。</p>
+                </div>
+                <div class="about-entry-meta"><time>2024.02 ～ 2024.06</time><span>小红书账号运营兼职</span></div>
+              </div>
+            </section>
+
+            <section class="about-panel">
+              <h2>校园活动经历</h2>
+              <div class="about-entry">
+                <div>
+                  <h3>Vibe Coding｜AI产品实践</h3>
+                  <p>使用Codex进行基于留学期间代购京都作家器物的个人经历，抓住“展期咨询杂乱，预购不便”的用户痛点，使用AI帮我整理即将/在售的器物展，制作面向中国器物爱好者的导览网站。使用 Codex 进行 AI 协作开发，将产品需求转化为 Prompt 指令，并参与前端页面、交互逻辑、响应式布局的多轮调整与迭代。</p>
+                </div>
+                <div class="about-entry-meta"><time>2026.04 ～ 2026.04</time><span>AI产品设计</span></div>
+              </div>
+              <div class="about-entry">
+                <div>
+                  <h3>「THE MENU」研究室成果展</h3>
+                  <p>参与年度研究室成果展览的整体策划，结合参展作品内容优化展示形式和观看路径。负责展览主视觉设计，提取参展作品的共性进行视觉转化。</p>
+                </div>
+                <div class="about-entry-meta"><time>2025.12 ～ 2026.01</time><span>展览策划&视觉设计</span></div>
+              </div>
+              <div class="about-entry">
+                <div>
+                  <h3>京都艺术大学研究生共创会</h3>
+                  <p>与研究室同伴创办大学院首个以影像艺术、声音实验、互动媒体等跨领域交流为目的的社团，搭建研究生之间沟通与合作的平台。</p>
+                </div>
+                <div class="about-entry-meta"><time>2025.07 ～ 至今</time><span>社团活动</span></div>
+              </div>
+              <div class="about-entry">
+                <div>
+                  <h3>第13届大学生广告艺术大赛</h3>
+                  <p>领导六人团队完成产品的整体策划与设计，包括项目分工、进度推进与方案统筹。负责设计线下活动体验流程，规划用户从接触产品、参与互动到形成反馈的完整路径，提升产品体验感与现场转化效果。</p>
+                </div>
+                <div class="about-entry-meta"><time>2021.05 ～ 2021.06</time><span>广告策划课题</span></div>
+              </div>
+              <div class="about-entry">
+                <div>
+                  <h3>China VISAP'21</h3>
+                  <p>独立完成中国各大城市「PM2.5 污染情况及其与二氧化碳关系」的数据可视化作品。从数据清洗与整理、使用 Tableau 完成数据图表制作、到最后进行视觉转化，提升了数据分析、信息设计与可视化表达能力。</p>
+                </div>
+                <div class="about-entry-meta"><time>2021.03 ～ 2021.04</time><span>数据可视化课题</span></div>
+              </div>
+              <div class="about-entry">
+                <div>
+                  <h3>浙江理工大学创新创业易维项目</h3>
+                  <p>与不同专业同学共同设计集取件码与人脸识别功能于一体的校园智慧柜，针对校园印刷材料存取不便、文件缺失、纸张堆放混乱等问题提出产品解决方案。负责产品外观与结构设计，结合校园使用场景，规划柜体形态、取件区域、操作界面。</p>
+                </div>
+                <div class="about-entry-meta"><time>2020.10 ～ 2020.11</time><span>产品设计课题</span></div>
+              </div>
+            </section>
+
+            <section class="about-panel about-awards">
+              <h2>获奖经历</h2>
+              <p>2020年　浙江理工大学年度优秀奖学金</p>
+              <p>2021年　浙江理工大学漫画募集大会一等奖</p>
+              <p>2023年　浙江理工大学本科优秀毕业设计奖</p>
+            </section>
+
+            <section class="about-panel about-skills">
+              <h2>软件技能</h2>
+              <ul>
+                <li><img src="assets/about/icon-ps.png" alt="" /><span>Photoshop</span></li>
+                <li><img src="assets/about/icon-ai.png" alt="" /><span>Illustrator</span></li>
+                <li><img src="assets/about/icon-pr.png" alt="" /><span>Premiere</span></li>
+                <li><img src="assets/about/icon-ae.png" alt="" /><span>AfterEffects</span></li>
+                <li><img src="assets/about/icon-lr.png" alt="" /><span>Lightroom</span></li>
+                <li><img src="assets/about/icon-id.png" alt="" /><span>InDesign</span></li>
+                <li><img src="assets/about/icon-xd.png" alt="" /><span>AdobeXD</span></li>
+                <li><img src="assets/about/icon-figma.png" alt="" /><span>Figma</span></li>
+                <li><img src="assets/about/icon-axure.png" alt="" /><span>Axure</span></li>
+                <li><img src="assets/about/icon-processing.png" alt="" /><span>Processing</span></li>
+                <li><img src="assets/about/icon-arduino.png" alt="" /><span>Arduino IDE</span></li>
+                <li><img src="assets/about/icon-touchdesigner.png" alt="" /><span>TouchDesigner</span></li>
+              </ul>
+            </section>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-page" aria-label="Contact">
+        <div class="contact-panel">
+          <dl class="contact-list">
+            <div>
+              <dt>WeChat</dt>
+              <dd>Yukko_1018</dd>
+            </div>
+            <div>
+              <dt>Mail</dt>
+              <dd>657428600@qq.com / lee.c.elf@gmail.com</dd>
+            </div>
+            <div>
+              <dt>Tel</dt>
+              <dd>+86 13543303586 / +81 09063275334</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="works-page" aria-label="Works">
+        <nav class="works-filter" aria-label="Works categories">
+          <a class="is-active" href="#works">TOP</a>
+          <a href="#works">Installation</a>
+          <a href="#works">Video Art</a>
+          <a href="#works">UI/UX Design</a>
+          <a href="#works">Graphic Design</a>
+          <a href="#works">Others</a>
+        </nav>
+        <div class="works-project-list" aria-hidden="true">
+          <span>快乐照相馆</span>
+          <span>线</span>
+          <span>缓缓</span>
+        </div>
+        <div class="works-project-note" aria-hidden="true"></div>
+
+        <div class="works-board">
+          <div class="works-gallery">
+	            <button class="work-item work-01" type="button" data-route="#work-happy" data-year="2022" data-title="快乐照相馆"><img src="assets/works/optimized/work-01.png" alt="Video art work" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-02" type="button" data-route="#work-line" data-year="2025" data-title="线"><img src="assets/works/optimized/work-02.jpg" alt="Installation work" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-03" type="button" data-route="#work-slow" data-year="2024" data-title="缓缓"><img src="assets/works/optimized/work-03.png" alt="Projection work" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-04" type="button" data-route="#work-virtual" data-year="2023" data-title="虚拟偶像工厂"><img src="assets/works/optimized/work-04.png" alt="UI illustration work" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-05" type="button" data-route="#work-poison" data-year="2023" data-title="毒"><img src="assets/works/optimized/work-05.png" alt="毒 作品主视觉" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-06" type="button" data-route="#work-filter" data-year="2023" data-title="你要戳泡吗？"><img src="assets/works/filter-detail/hero.jpg?v=20260614-filter-transition-source" alt="The Filter Bubble" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-07" type="button" data-route="#work-togo" data-year="2022" data-title="TOGO"><img src="assets/works/optimized/work-06.png" alt="TOGO UI design screens" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-08" type="button" data-route="#work-view" data-year="2022" data-title="深圳VIEW"><img src="assets/works/optimized/work-07.png" alt="Shenzhen website design" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-09" type="button" data-route="#work-menu" data-year="2025" data-title="THE MENU"><img src="assets/works/optimized/work-08.png" alt="The Menu poster" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-10" type="button" data-route="#work-music" data-year="2023" data-title="音乐可视化"><img src="assets/works/optimized/work-charmer.png" alt="音乐可视化 graphic design" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-11" type="button" data-route="#work-blindbox" data-year="2021" data-title="BLIND BOX"><img src="assets/works/optimized/work-blindbox.png" alt="Blind box design" loading="lazy" decoding="async" /></button>
+	            <button class="work-item work-12" type="button" data-route="#work-screen" data-year="2021～2024" data-title="大屏"><img src="assets/works/optimized/work-12.png" alt="Digital signage design" loading="lazy" decoding="async" /></button>
+          </div>
+
+          <div class="works-more" aria-label="More works">
+	            <button class="more-work-item more-work-01" type="button" data-route="#work-happy" data-year="2022" data-title="快乐照相馆"><img src="assets/works/optimized/work-01.png" alt="Video art work" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-line" data-year="2025" data-title="线"><img src="assets/works/optimized/work-02.jpg" alt="Installation work" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-slow" data-year="2024" data-title="缓缓"><img src="assets/works/optimized/work-03.png" alt="Projection work" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-virtual" data-year="2023" data-title="虚拟偶像工厂"><img src="assets/works/optimized/work-04.png" alt="UI illustration work" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-poison" data-year="2023" data-title="毒"><img src="assets/works/optimized/work-05.png" alt="毒 作品主视觉" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-filter" data-year="2023" data-title="你要戳泡吗？"><img src="assets/works/filter-detail/hero.jpg?v=20260614-filter-transition-source" alt="The Filter Bubble" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-togo" data-year="2022" data-title="TOGO"><img src="assets/works/optimized/work-06.png" alt="TOGO UI design screens" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-view" data-year="2022" data-title="深圳VIEW"><img src="assets/works/optimized/work-07.png" alt="Shenzhen website design" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-menu" data-year="2025" data-title="THE MENU"><img src="assets/works/optimized/work-08.png" alt="The Menu poster" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-music" data-year="2023" data-title="音乐可视化"><img src="assets/works/optimized/work-charmer.png" alt="音乐可视化 graphic design" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-blindbox" data-year="2021" data-title="BLIND BOX"><img src="assets/works/optimized/work-blindbox.png" alt="Blind box design" loading="lazy" decoding="async" /></button>
+	            <button class="more-work-item" type="button" data-route="#work-screen" data-year="2021～2024" data-title="大屏"><img src="assets/works/optimized/work-12.png" alt="Digital signage design" loading="lazy" decoding="async" /></button>
+          </div>
+        </div>
+        <div class="works-scroll-spacer" aria-hidden="true"></div>
+      </section>
+
+      <article class="work-detail-page happy-detail-page" aria-label="快乐照相馆 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="line-detail-hero happy-detail-hero">
+          <img src="assets/works/optimized/work-01.png" alt="快乐照相馆 主视觉" decoding="async" />
+          <div class="line-detail-intro happy-detail-intro">
+            <h1>快乐照相馆</h1>
+            <p class="line-detail-year">2022</p>
+            <p>修士考学作品</p>
+            <p class="line-detail-tools">Arduino、Processing、RaspberryPi、Python、<br />PremierePro、屏幕、摄像头、热敏打印机、<br />超声波距离传感器、风扇、PVC镜面布</p>
+            <p>
+              这是一件体验型装置作品，<br />
+              旨在表达当代中国年轻人在社会压力、现实困境<br />
+              与网络文化之间所形成的复杂又矛盾的精神状态。
+            </p>
+          </div>
+        </header>
+
+        <section class="happy-detail-copy">
+          <p class="virtual-detail-concept-copy">
+            本作品创作于新冠疫情的封闭时期。网络成为人们释放情绪的主要出口，借此来逃避现实中的压抑。<br />
+            我称之为“当代人的阿Q精神”。并通过影像和风的互动体验，将这种现象具像化，让观众切身感受到“苦中作乐”的矛盾感。
+          </p>
+        </section>
+
+        <section class="line-detail-pair happy-detail-pair">
+          <figure class="line-detail-media">
+            <img src="assets/works/happy-detail/33.png?v=20260605-happy-33" alt="快乐照相馆 展示现场" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="line-detail-media">
+            <img src="assets/works/happy-detail/34.png" alt="快乐照相馆 观众互动细节" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="line-detail-row happy-detail-sketch">
+          <figure class="line-detail-media happy-detail-sketch-media">
+            <img src="assets/works/happy-detail/39.png" alt="快乐照相馆 装置草图" loading="lazy" decoding="async" />
+          </figure>
+          <p class="happy-detail-sketch-copy">
+            装置由影像、风扇、摄像头、热敏打印机、超声波距离传感器等构成。<br />
+            当感应到头伸进箱子里时，装置会启动风扇，开始播放诙谐的影像。<br />
+            与此同时，摄像头会拍下观众被风吹的扭曲的表情，并通过热敏打印机打印出来。<br />
+            让观众在看似轻松有趣的互动中，体会情绪和身体感受相左的冲突感。
+          </p>
+        </section>
+
+        <section class="line-detail-section happy-detail-wide">
+          <figure class="line-detail-media happy-detail-wide-media">
+            <img src="assets/works/happy-detail/35.png" alt="快乐照相馆 装置结构细节" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="line-detail-triptych happy-detail-triptych">
+          <p class="happy-detail-triptych-copy">
+            从社会文化层面来看，本作品也试图反思一种长期存在的顺从、忍耐与内部竞争的文化心理。<br />
+            当外部环境难以改变，个体又缺乏真正表达和反抗的空间时，人们往往会转向内部消化痛苦，通过自嘲、迷信和娱乐化来寻找精神寄托。
+          </p>
+          <figure class="line-detail-media">
+            <img src="assets/works/happy-detail/37.png" alt="快乐照相馆 输出影像细节" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="line-detail-media">
+            <img src="assets/works/happy-detail/1.png?v=20260605-happy-triptych-center" alt="快乐照相馆 装置全景" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="line-detail-media">
+            <img src="assets/works/happy-detail/38.png" alt="快乐照相馆 纸张堆叠细节" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="happy-detail-copy happy-detail-bottom-copy">
+          <p>通过箱体封闭的空间，将观众与现实世界隔离开来，PVC镜面布的反射带来一种眩晕般的体验感。</p>
+        </section>
+
+        <section class="line-detail-section line-detail-final happy-detail-final">
+          <figure class="line-detail-media happy-detail-final-media">
+            <img src="assets/works/happy-detail/36.png" alt="快乐照相馆 镜面材料细节" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+      </article>
+
+      <article class="work-detail-page line-detail-page" aria-label="线 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="line-detail-hero">
+          <img src="assets/works/optimized/work-02.jpg" alt="线 装置作品主视觉" decoding="async" />
+          <div class="line-detail-intro">
+            <h1>线</h1>
+            <p class="line-detail-year">2025</p>
+            <p>大学院研究室成果展作品</p>
+            <p class="line-detail-tools">Arduino、TouchDesigner、<br />杂草、LED灯带、触觉传感器、震动马达</p>
+            <p>
+              这是一件影像交互装置作品，<br />
+              灵感来源于在狭窄而严酷环境中<br />
+              依然顽强生长的路边杂草，<br />
+              触摸它们时所感受到的生命力与宁静。
+            </p>
+          </div>
+        </header>
+
+        <section class="line-detail-row line-detail-concept">
+          <p>
+            在现代社会快节奏的生活中，工作与学习带来的压力，<br />
+            以及来自社会无形的规训，仿佛将我像一根绷紧的细线般不断拉扯。<br />
+            我尝试将杂草的生命力可视化，并通过触觉、声音、影像的联动，<br />
+            创造让人能在忙碌生活中稍作喘息的疗愈空间。
+          </p>
+          <figure class="line-detail-media line-detail-placeholder-drawing line-detail-concept-space">
+            <img src="assets/works/line-detail/concept-space.jpg" alt="线 装置空间概念示意图" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="line-detail-section">
+          <figure class="line-detail-media line-detail-wide-media">
+            <img src="assets/works/line-detail/installation-view.jpg" alt="线 装置作品展示现场" loading="lazy" decoding="async" />
+          </figure>
+          <p class="line-detail-caption">
+            当触摸叶片时，影像中飘散的粒子逐渐汇聚成杂草的形态，并伴随着心脏跳动般的起伏。<br />
+            灯带如血管中的血液般，由影像中的杂草流向观众的手指。指尖可以感受到叶片随着画面的跳动幅度轻轻震动。<br />
+            同时，空间中播放着自然界中提取的声音，使观众感受到生命之间的共鸣与连接。
+          </p>
+        </section>
+
+        <section class="line-detail-pair">
+          <figure class="line-detail-media line-detail-interaction-crop">
+            <img src="assets/works/line-detail/interaction-particles.jpg" alt="线 粒子影像交互示意图" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="line-detail-media line-detail-interaction-crop">
+            <img src="assets/works/line-detail/interaction-flow.jpg" alt="线 触摸与影像变化交互示意图" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="line-detail-triptych">
+          <figure class="line-detail-media">
+            <img src="assets/works/line-detail/detail-plant.jpg" alt="线 植物与传感装置细节" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="line-detail-media">
+            <img src="assets/works/line-detail/detail-touch.jpg" alt="线 观众触摸植物的互动细节" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="line-detail-media">
+            <img src="assets/works/line-detail/detail-installation.jpg" alt="线 互动装置展示现场" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="line-detail-process">
+          <p>我将所拍摄的路边杂草形状进行拓印。</p>
+          <div class="line-detail-process-grid">
+            <figure class="line-detail-media">
+              <img src="assets/works/line-detail/process-display.png" alt="线 植物图形与灯光展示过程" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="line-detail-media line-detail-visual-variations">
+              <img src="assets/works/line-detail/visual-variations.png" alt="线 植物图形视觉变化组" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="line-detail-section line-detail-final">
+          <figure class="line-detail-media line-detail-final-media">
+            <img src="assets/works/line-detail/led-strip-closeup.jpg?v=20260604-1749" alt="线 装置绿色灯带细节" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+      </article>
+
+      <article class="work-detail-page slow-detail-page" aria-label="缓缓 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="slow-detail-hero">
+          <img src="assets/works/slow-detail/hero.jpg" alt="缓缓 主视觉" decoding="async" />
+          <div class="slow-detail-intro">
+            <h1>缓缓</h1>
+            <p class="line-detail-year">2024</p>
+            <p>修士考学作品</p>
+            <p class="line-detail-tools">Arduino、AfterEffects、Premiere Pro、音响、抱枕、纱布</p>
+            <p>
+              这是一件实验性的空间互动装置作品。<br />
+              通过声、光与拥抱这一动作、探讨空间与人，人与人之间的关系。
+            </p>
+          </div>
+        </header>
+
+        <section class="slow-detail-row">
+          <figure class="slow-detail-sketch">
+            <img src="assets/works/slow-detail/sketch.jpg?v=20260606-43" alt="缓缓 交互草图" loading="lazy" decoding="async" />
+          </figure>
+          <div class="slow-detail-copy-image">
+            <p class="slow-detail-sound-copy">
+              抱枕内设置了声音装置，拥抱时观众可以听见呼吸、心跳、肠胃蠕动等人体内的声音。<br />
+              伴随枕头柔软的触感，声音响起时的振动，带来与人拥抱的感受，使心情逐渐平静下来。
+            </p>
+            <figure>
+              <img src="assets/works/slow-detail/closeup.jpg" alt="缓缓 观众与抱枕互动细节" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="slow-detail-strip-section">
+          <p>影像部分，我用颜文字来表现雨、雪、晴等天气。象征着数字化时代，语言文字的退化。</p>
+          <figure class="slow-detail-strip">
+            <img src="assets/works/slow-detail/visual-strip.jpg" alt="缓缓 影像文字视觉变化" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="slow-detail-final-section">
+          <p>
+            观众被影像的光与图形所包裹，淡化了身体外貌的特征。<br />
+            我希望创造出人与人、人与物能够平等地交流，并从中获得安心感的空间。
+          </p>
+          <figure class="slow-detail-final-media">
+            <img src="assets/works/slow-detail/final.jpg" alt="缓缓 红色光影装置现场" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+      </article>
+
+      <article class="work-detail-page virtual-detail-page" aria-label="虚拟偶像工厂 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="virtual-detail-hero">
+          <img src="assets/works/virtual-idol-detail/6.png" alt="虚拟偶像工厂 主视觉" decoding="async" />
+          <div class="line-detail-intro virtual-detail-intro">
+            <h1>虚拟偶像工厂</h1>
+            <p class="line-detail-year">2023</p>
+            <p>修士考学作品</p>
+            <p class="line-detail-tools">Illustrator、Photoshop、AfterEffects、Audition、<br />PremierePro、Axure、超感纸、显示器</p>
+            <p>
+              本作品通过影像、网页设计、手册设计三个部分，<br />
+              表现了当下偶像产业的工厂化。
+            </p>
+          </div>
+        </header>
+
+        <section class="virtual-detail-concept">
+          <p class="virtual-detail-concept-copy">
+            从音乐到形象，甚至性格都被精心包装，<br />
+            偶像似流水线上源源不断的产品。<br />
+            我通过“设计、组装、筛选、包装、上市”<br />
+            五个循环影像，描绘了偶像诞生的华丽与残酷。
+          </p>
+          <figure class="virtual-detail-media virtual-detail-sketch">
+            <img src="assets/works/virtual-idol-detail/44.png" alt="虚拟偶像工厂 设定草图" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <p class="virtual-detail-sequence-note">从左到右：设计、组装、筛选、包装、上市</p>
+        <section class="virtual-detail-strip" aria-label="虚拟偶像工厂 视觉图组">
+          <figure class="virtual-detail-media video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211433916?share=copy&fl=sv&fe=ci"><img src="assets/works/virtual-idol-detail/6.png" alt="虚拟偶像工厂 主视觉缩略图" loading="lazy" decoding="async" /></figure>
+          <figure class="virtual-detail-media video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211435208?share=copy&fl=sv&fe=ci"><img src="assets/works/virtual-idol-detail/46.png" alt="虚拟偶像角色生产舱" loading="lazy" decoding="async" /></figure>
+          <figure class="virtual-detail-media video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211445899?share=copy&fl=sv&fe=ci"><img src="assets/works/virtual-idol-detail/47.png" alt="虚拟偶像角色展示场景" loading="lazy" decoding="async" /></figure>
+          <figure class="virtual-detail-media video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211446500?share=copy&fl=sv&fe=ci"><img src="assets/works/virtual-idol-detail/48.png" alt="虚拟偶像工厂生产流程场景" loading="lazy" decoding="async" /></figure>
+          <figure class="virtual-detail-media video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211449640?share=copy&fl=sv&fe=ci"><img src="assets/works/virtual-idol-detail/49.png" alt="虚拟偶像宣传展板" loading="lazy" decoding="async" /></figure>
+        </section>
+
+        <section class="virtual-detail-exhibition-section">
+          <p>整体展示风景</p>
+          <figure class="virtual-detail-media virtual-detail-exhibition">
+            <img src="assets/works/virtual-idol-detail/45.png" alt="虚拟偶像工厂 展览现场" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="virtual-detail-book-row">
+          <p class="virtual-detail-book-copy">
+            手册设计的部分，<br />
+            为了丰富“虚拟公司”的概念，<br />
+            我加入了更多关于公司的详细信息。<br />
+            内容包含公司发展历史、部门构成、热门商品、<br />
+            新商品、网站、产品发展趋势六个部分。<br />
+            通过这些内容，详细介绍了<br />
+            VIEX（Virtual Idol Expert）娱乐公司的世界观。
+          </p>
+          <figure class="virtual-detail-media">
+            <img src="assets/works/virtual-idol-detail/52.png" alt="虚拟偶像工厂 公司发展历史画册内页" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="virtual-detail-media">
+            <img src="assets/works/virtual-idol-detail/53.png" alt="虚拟偶像工厂 制作部画册内页" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="virtual-detail-media">
+            <img src="assets/works/virtual-idol-detail/54.png" alt="虚拟偶像工厂 专辑画册内页" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="virtual-detail-spreads">
+          <figure class="virtual-detail-media virtual-detail-cover">
+            <img src="assets/works/virtual-idol-detail/50.png" alt="虚拟偶像工厂 画册封面" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="virtual-detail-media virtual-detail-spread">
+            <img src="assets/works/virtual-idol-detail/51.png" alt="虚拟偶像工厂 新品介绍画册内页" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="virtual-detail-web-row">
+          <figure class="virtual-detail-media virtual-detail-web">
+            <img src="assets/works/virtual-idol-detail/56.png" alt="虚拟偶像工厂 网页原型" loading="lazy" decoding="async" />
+          </figure>
+          <p class="virtual-detail-web-copy">
+            这是一个可交互的公司官方网站，<br />
+            由“首页、关于公司、关于艺人、联系我们”四个部分构成。
+          </p>
+        </section>
+
+        <section class="virtual-detail-final">
+          <figure class="virtual-detail-media virtual-detail-final-media">
+            <img src="assets/works/virtual-idol-detail/55.png" alt="虚拟偶像工厂 最终展示总览" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+      </article>
+
+      <article class="work-detail-page poison-detail-page" aria-label="毒 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="line-detail-hero poison-detail-hero">
+          <img src="assets/works/optimized/work-05.png?v=20260614-poison-hero-optimized" alt="毒 作品主视觉" decoding="async" />
+          <div class="line-detail-intro poison-detail-intro">
+            <h1>毒</h1>
+            <p class="line-detail-year">2023</p>
+            <p>修士考学作品</p>
+            <p class="line-detail-tools">Illustrator、Photoshop、AfterEffects、PremierePro、<br />Blender、投影仪、气泡板、木材、黏土、塑料植物</p>
+            <p class="poison-detail-hero-copy">
+              这是一件影像作品，<br />
+              我将信息化社会中的一些极端现象，<br />
+              与佛教中的五毒结合起来。<br />
+              探讨人类如何因电子媒体的侵蚀而逐渐被异化。
+            </p>
+          </div>
+        </header>
+
+        <section class="poison-detail-center">
+          <p class="poison-detail-center-copy">
+            将现代社会问题与传统形象相结合，<br />
+            带来更具有冲击的表现形式。
+          </p>
+          <figure class="poison-detail-deity">
+            <img src="assets/works/poison-detail/57.png?v=20260607-poison-detail" alt="毒 主视觉中心图像" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <figure class="poison-detail-bardo video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/854743780?share=copy&fl=sv&fe=ci">
+          <img src="assets/works/poison-detail/bardo-unblackened.jpg?v=20260721-poison-bardo" alt="毒 中阴未黑化场景" loading="lazy" decoding="async" />
+        </figure>
+
+        <section class="poison-detail-storyboard" aria-label="毒 影像分镜">
+          <div class="poison-detail-browser poison-detail-browser-wide poison-storyboard-1">
+            <img src="assets/works/poison-detail/58.png?v=20260608-poison-storyboard-refresh" alt="毒 影像分镜 1" loading="lazy" decoding="async" />
+          </div>
+          <div class="poison-detail-browser poison-storyboard-2">
+            <img src="assets/works/poison-detail/59.png?v=20260608-poison-storyboard-refresh" alt="毒 影像分镜 2" loading="lazy" decoding="async" />
+          </div>
+          <div class="poison-detail-browser poison-storyboard-3">
+            <img src="assets/works/poison-detail/60.png?v=20260608-poison-storyboard-refresh" alt="毒 影像分镜 3" loading="lazy" decoding="async" />
+          </div>
+          <p class="poison-detail-storyboard-copy">
+            影像部分将信息社会中存在的<br />
+            “过度消费、网络暴力、盲目从众、<br />
+            随意贴标签、过度猜疑”等问题，<br />
+            与佛教中的“贪、嗔、痴、慢、疑”<br />
+            这五种烦恼结合起来进行表现。<br />
+            观众以第一人称视角，<br />
+            进入如电脑界面般的“中阴界”，<br />
+            在其中逐渐被烦恼侵蚀，<br />
+            最终陷入痛苦，无法从轮回中脱离。
+          </p>
+          <div class="poison-detail-browser poison-detail-browser-symbol poison-storyboard-4">
+            <img src="assets/works/poison-detail/61.png?v=20260608-poison-storyboard-refresh" alt="毒 影像分镜 4" loading="lazy" decoding="async" />
+          </div>
+          <div class="poison-detail-browser poison-detail-browser-wide poison-storyboard-5">
+            <img src="assets/works/poison-detail/62.png?v=20260608-poison-storyboard-refresh" alt="毒 影像分镜 5" loading="lazy" decoding="async" />
+          </div>
+        </section>
+
+        <section class="poison-detail-installation">
+          <p>整体展示风景</p>
+          <figure>
+            <img src="assets/works/poison-detail/63.png?v=20260607-poison-detail" alt="毒 展示现场" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="poison-detail-closeups">
+          <p class="poison-detail-closeups-copy">
+            本作品围绕信息化社会中的极端现象将其视觉化，<br />
+            旨在提醒观众注意自己不要被电子媒体所异化。<br />
+            作品以沉浸式影像空间的形式进行展出，<br />
+            通过模糊现实世界与虚拟世界的边界带给观众更强烈的体验。
+          </p>
+          <div class="poison-detail-closeup-grid" aria-label="毒 装置细节">
+            <figure><img src="assets/works/poison-detail/66.png?v=20260607-poison-detail" alt="毒 装置细节 1" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/works/poison-detail/67.png?v=20260607-poison-detail" alt="毒 装置细节 2" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/works/poison-detail/64.png?v=20260607-poison-detail" alt="毒 装置细节 3" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/works/poison-detail/65.png?v=20260607-poison-detail" alt="毒 装置细节 4" loading="lazy" decoding="async" /></figure>
+          </div>
+        </section>
+      </article>
+
+      <article class="work-detail-page filter-detail-page" aria-label="你要戳泡吗？ 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="line-detail-hero filter-detail-hero">
+          <div class="filter-detail-hero-image">
+            <img src="assets/works/filter-detail/hero.jpg?v=20260614-filter-transition-source" alt="你要戳泡吗？ 主视觉" decoding="async" />
+          </div>
+          <div class="line-detail-intro filter-detail-intro">
+            <h1>你要戳泡吗？</h1>
+            <p class="line-detail-year">2023</p>
+            <p>本科毕业设计</p>
+            <p class="line-detail-tools filter-detail-tools">Illustrator、Photoshop、AfterEffects、<br />Premiere Pro、TouchDesigner、气泡膜、硫酸纸</p>
+            <p class="filter-detail-hero-copy">
+              本作品通过影像、插画和图形，<br />
+              对“Filter Bubbles（过滤气泡）”<br />
+              这一网络现象进行视觉化拆解与表现。
+            </p>
+          </div>
+        </header>
+
+        <section class="filter-detail-poster-row">
+          <p class="filter-detail-poster-copy">
+            通过动态海报描绘了过滤气泡产生的六步过程。
+          </p>
+          <figure class="filter-detail-poster video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211474489?share=copy&fl=sv&fe=ci">
+            <img src="assets/works/filter-detail/70.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 人生严重新闻海报" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="filter-detail-steps">
+          <div class="filter-detail-step-grid">
+            <figure class="filter-detail-step-video video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211464718?share=copy&fl=sv&fe=ci"><img src="assets/works/filter-detail/71.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 操作流程 Step 1" loading="lazy" decoding="async" /></figure>
+            <figure class="filter-detail-step-video video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211470478?share=copy&fl=sv&fe=ci"><img src="assets/works/filter-detail/72.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 操作流程 Step 2" loading="lazy" decoding="async" /></figure>
+            <figure class="filter-detail-step-video video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211471464?share=copy&fl=sv&fe=ci"><img src="assets/works/filter-detail/73.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 操作流程 Step 3" loading="lazy" decoding="async" /></figure>
+            <figure class="filter-detail-step-video video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211472159?share=copy&fl=sv&fe=ci"><img src="assets/works/filter-detail/74.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 操作流程 Step 4" loading="lazy" decoding="async" /></figure>
+            <figure class="filter-detail-step-video video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211473231?share=copy&fl=sv&fe=ci"><img src="assets/works/filter-detail/75.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 操作流程 Step 5" loading="lazy" decoding="async" /></figure>
+            <figure class="filter-detail-step-video video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1211473925?share=copy&fl=sv&fe=ci"><img src="assets/works/filter-detail/76.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 操作流程 Step 6" loading="lazy" decoding="async" /></figure>
+          </div>
+        </section>
+
+        <section class="filter-detail-comic-row">
+          <figure>
+            <div class="filter-detail-comic-grid">
+              <img src="assets/works/filter-detail/77.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 交互画面 1" loading="lazy" decoding="async" />
+              <img src="assets/works/filter-detail/78.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 交互画面 2" loading="lazy" decoding="async" />
+              <img src="assets/works/filter-detail/79.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 交互画面 3" loading="lazy" decoding="async" />
+              <img src="assets/works/filter-detail/80.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 交互画面 4" loading="lazy" decoding="async" />
+            </div>
+          </figure>
+          <p class="filter-detail-comic-copy">
+            插画描绘了过滤气泡带来的危害，<br />
+            左上群体极化，右上反转新闻，<br />
+            左下信息同质化，右下大数据杀熟。
+          </p>
+        </section>
+
+        <section class="filter-detail-sequence">
+          <p>
+            下图为影像部分关键帧，<br />
+            通过图形动画详细表现了过滤气泡的危害，并提醒观众思考“戳泡”与否。
+          </p>
+          <figure>
+            <img src="assets/works/filter-detail/81.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 影像画面序列" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="filter-detail-video-still video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/854755065?share=copy&fl=sv&fe=ci">
+            <img src="assets/works/filter-detail/filter-bubble-video-still.jpg?v=20260721-filter-video-still" alt="你要戳泡吗？ 视频关键帧" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="filter-detail-final">
+          <figure class="filter-detail-exhibition">
+            <img src="assets/works/filter-detail/82.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 展示现场" loading="lazy" decoding="async" />
+          </figure>
+          <div class="filter-detail-final-copy">
+            <p>毕设展示风景</p>
+            <figure>
+              <img src="assets/works/filter-detail/83.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 展示细节 1" loading="lazy" decoding="async" />
+              <img src="assets/works/filter-detail/84.png?v=20260608-filter-detail-formal" alt="你要戳泡吗？ 展示细节 2" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </section>
+      </article>
+
+      <article class="work-detail-page togo-detail-page" aria-label="TOGO 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="line-detail-hero togo-detail-hero">
+          <img src="assets/works/optimized/work-06.png?v=20260615-togo-detail" alt="TOGO 主视觉" decoding="async" />
+          <div class="line-detail-intro togo-detail-intro">
+            <h1>TOGO</h1>
+            <p class="line-detail-year">2022</p>
+            <p>本科课程设计</p>
+            <p class="line-detail-tools">Figma、Illustrator、Photoshop、AfterEfects</p>
+            <p>
+              这是一款集“门票预约、项目预定、酒店预约、<br />
+              个性化路线定制”等一站式服务的乡旅APP产品，<br />
+              配合AR互动体验，旨在增强游玩的趣味性。
+            </p>
+          </div>
+        </header>
+
+        <section class="togo-detail-brand">
+          <div class="togo-detail-brand-mark">
+            <img class="togo-detail-appmark" src="assets/works/togo-detail/90.png?v=20260615-togo-detail-assets" alt="TOGO App 图标" loading="lazy" decoding="async" />
+            <p>
+              TOGO<br />
+              乡旅说走就走
+            </p>
+          </div>
+          <figure>
+            <img src="assets/works/togo-detail/91.png?v=20260615-togo-detail-assets" alt="TOGO 手机界面展示" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="togo-detail-process">
+          <figure>
+            <figcaption class="togo-detail-section-title">背景分析</figcaption>
+            <img src="assets/works/togo-detail/92.png?v=20260615-togo-detail-assets" data-cn-src="assets/works/togo-detail/92.png?v=20260615-togo-detail-assets" data-jp-src="assets/works/togo-detail/92-ja.png?v=20260719-togo-ja" alt="TOGO 背景分析" loading="lazy" decoding="async" />
+          </figure>
+          <figure>
+            <figcaption class="togo-detail-section-title">竞品分析</figcaption>
+            <img src="assets/works/togo-detail/93.png?v=20260615-togo-detail-assets" data-cn-src="assets/works/togo-detail/93.png?v=20260615-togo-detail-assets" data-jp-src="assets/works/togo-detail/93-ja.png?v=20260719-togo-ja" alt="TOGO 竞品分析" loading="lazy" decoding="async" />
+          </figure>
+          <figure>
+            <figcaption class="togo-detail-section-title">用户调研</figcaption>
+            <img src="assets/works/togo-detail/94.png?v=20260615-togo-detail-assets" data-cn-src="assets/works/togo-detail/94.png?v=20260615-togo-detail-assets" data-jp-src="assets/works/togo-detail/94-ja.png?v=20260719-togo-ja" alt="TOGO 用户调研" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="togo-detail-titled-figure togo-detail-journey-map">
+            <figcaption class="togo-detail-section-title togo-detail-title-journey">用户体验旅程图</figcaption>
+            <figcaption class="togo-detail-section-title togo-detail-title-pain">痛点分析与功能转换</figcaption>
+            <figcaption class="togo-detail-section-title togo-detail-title-feature">特色功能提炼</figcaption>
+            <img src="assets/works/togo-detail/95.png?v=20260615-togo-detail-assets" data-cn-src="assets/works/togo-detail/95.png?v=20260615-togo-detail-assets" data-jp-src="assets/works/togo-detail/95-ja.png?v=20260719-togo-ja" alt="TOGO 用户体验旅程图、痛点分析与功能转换、特色功能提炼" loading="lazy" decoding="async" />
+          </figure>
+          <figure>
+            <figcaption class="togo-detail-section-title">用户测试</figcaption>
+            <img src="assets/works/togo-detail/96.png?v=20260716-togo-update" data-cn-src="assets/works/togo-detail/96.png?v=20260716-togo-update" data-jp-src="assets/works/togo-detail/96-ja.png?v=20260719-togo-ja" alt="TOGO 用户测试" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="togo-detail-titled-figure togo-detail-usability-map">
+            <figcaption class="togo-detail-section-title togo-detail-title-usability">可用性测试</figcaption>
+            <figcaption class="togo-detail-section-title togo-detail-title-architecture">最终APP架构</figcaption>
+            <img src="assets/works/togo-detail/97.png?v=20260615-togo-detail-assets" data-cn-src="assets/works/togo-detail/97.png?v=20260615-togo-detail-assets" data-jp-src="assets/works/togo-detail/97-ja.png?v=20260719-togo-ja" alt="TOGO 可用性测试与最终APP架构" loading="lazy" decoding="async" />
+          </figure>
+          <figure>
+            <figcaption class="togo-detail-section-title">设计规范</figcaption>
+            <img src="assets/works/togo-detail/98.png?v=20260716-togo-update" data-cn-src="assets/works/togo-detail/98.png?v=20260716-togo-update" data-jp-src="assets/works/togo-detail/98-ja.png?v=20260719-togo-ja" alt="TOGO 设计规范" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="togo-detail-display">
+          <figure class="togo-detail-display-primary">
+            <figcaption class="togo-detail-section-title">高保真</figcaption>
+            <img src="assets/works/togo-detail/99.png?v=20260615-togo-detail-assets" data-cn-src="assets/works/togo-detail/99.png?v=20260615-togo-detail-assets" data-jp-src="assets/works/togo-detail/99-ja.png?v=20260719-togo-ja" alt="TOGO 成品展示 1" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="togo-detail-display-secondary"><img src="assets/works/togo-detail/100.png?v=20260716-togo-100-update" data-cn-src="assets/works/togo-detail/100.png?v=20260716-togo-100-update" data-jp-src="assets/works/togo-detail/100-ja.png?v=20260719-togo-ja" alt="TOGO 成品展示 2" loading="lazy" decoding="async" /></figure>
+          <figure class="togo-detail-footer-logo">
+            <img src="assets/works/togo-detail/90.png?v=20260615-togo-detail-assets" alt="TOGO App 图标" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+      </article>
+
+      <article class="work-detail-page view-detail-page" aria-label="深圳VIEW 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="line-detail-hero view-detail-hero">
+          <img src="assets/works/view-detail/8.png?v=20260716-view-layout" alt="深圳VIEW 主视觉" decoding="async" />
+          <div class="line-detail-intro view-detail-intro">
+            <h1>深圳VIEW</h1>
+            <p class="line-detail-year">2022</p>
+            <p>本科课程设计</p>
+            <p class="line-detail-tools">AdobeXD、Illustrator、Photoshop</p>
+            <p class="view-detail-hero-copy">
+              这是以城市宣传为中心的网页设计，<br />
+              我选取“深圳”为主题，<br />
+              围绕城市文化、建筑美学与生活印象展开，<br />
+              旨在更直观地传达城市魅力。
+            </p>
+          </div>
+        </header>
+
+        <section class="view-detail-pair">
+          <figure class="view-detail-small-page">
+            <img src="assets/works/view-detail/111.png?v=20260716-view-layout" alt="深圳VIEW 内容页展示" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="view-detail-laptop">
+            <img src="assets/works/view-detail/110.png?v=20260716-view-layout" alt="深圳VIEW 电脑端展示" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="view-detail-copy">
+          <p>
+            网站由“首页、周末去哪、美食探店、场馆预约”等模块构成。<br />
+            整体设计采用简洁现代的风格，并结合网格布局、<br />
+            留白处理与柔和色调，突出深圳建筑线条的美感与空间感。
+          </p>
+        </section>
+
+        <section class="view-detail-wide">
+          <figure>
+            <img src="assets/works/view-detail/112.png?v=20260717-view-wide-pair" alt="深圳VIEW 页面视觉展示" loading="lazy" decoding="async" />
+          </figure>
+          <figure>
+            <img src="assets/works/view-detail/114.png?v=20260717-view-wide-pair" alt="深圳VIEW 页面视觉展示补充" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="view-detail-system">
+          <figure>
+            <img src="assets/works/view-detail/113.png?v=20260717-view-system" alt="深圳VIEW 网站系统展示" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+      </article>
+
+      <article class="work-detail-page menu-detail-page" aria-label="THE MENU 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="line-detail-hero menu-detail-hero">
+          <img src="assets/works/menu-detail/16.png?v=20260717-menu-no-crop" alt="THE MENU 主视觉海报" decoding="async" />
+          <div class="line-detail-intro menu-detail-intro">
+            <h1>THE MENU</h1>
+            <p class="line-detail-year">2025</p>
+            <p>展览海报设计</p>
+            <p class="line-detail-tools">Illustrator、Photoshop</p>
+            <p>
+              2025年度研究室成果展设计的主视觉。
+            </p>
+          </div>
+        </header>
+
+        <section class="menu-detail-interaction">
+          <p>
+            扫海报中的二维码，<br />
+            进行简单的游戏互动，增加趣味性。
+          </p>
+          <div class="menu-detail-phone-row">
+            <figure>
+              <img src="assets/works/menu-detail/120.png?v=20260717-menu-phone-half" alt="THE MENU 游戏互动开始页面" loading="lazy" decoding="async" />
+            </figure>
+            <figure>
+              <img src="assets/works/menu-detail/121.png?v=20260717-menu-phone-half" alt="THE MENU 游戏互动页面" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </section>
+      </article>
+
+      <article class="work-detail-page music-detail-page" aria-label="音乐可视化 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="line-detail-hero music-detail-hero">
+          <img src="assets/works/music-visualization-detail/12.png?v=20260717-music-detail" alt="音乐可视化 CHARMER 主视觉" decoding="async" />
+          <div class="line-detail-intro music-detail-intro">
+            <h1>音乐可视化</h1>
+            <p class="line-detail-year">2023</p>
+            <p>音乐可视化练习</p>
+            <p class="line-detail-tools">TouchDesigner、Photoshop、AfterEffects</p>
+          </div>
+        </header>
+
+        <section class="music-detail-gallery" aria-label="音乐可视化 图组">
+          <figure class="music-detail-charmer video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1213044366?share=copy&fl=sv&fe=ci">
+            <figcaption>CHARMER</figcaption>
+            <img src="assets/works/music-visualization-detail/12.png?v=20260717-music-detail" alt="CHARMER 音乐可视化画面" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1213043255?share=copy&fl=sv&fe=ci">
+            <figcaption>SHOOT</figcaption>
+            <img src="assets/works/music-visualization-detail/130.png?v=20260717-music-detail" alt="SHOOT 音乐可视化画面" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="video-trigger" role="button" tabindex="0" data-video-url="https://vimeo.com/1213045836?share=copy&fl=sv&fe=ci">
+            <figcaption>moonstruck</figcaption>
+            <img src="assets/works/music-visualization-detail/131.png?v=20260717-music-detail" alt="moonstruck 音乐可视化画面" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+      </article>
+
+      <article class="work-detail-page blindbox-detail-page" aria-label="BLIND BOX 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="line-detail-hero blindbox-detail-hero">
+          <img src="assets/works/blindbox-detail/10.png?v=20260717-blindbox-layout" alt="BLIND BOX 主视觉" decoding="async" />
+          <div class="line-detail-intro blindbox-detail-intro">
+            <h1>BLIND BOX</h1>
+            <p class="line-detail-year">2021</p>
+            <p>盲盒设计</p>
+            <p class="blindbox-detail-hero-copy">
+              为“李东海ELFISH吧”设计的系列偶像盲盒产品。
+            </p>
+          </div>
+        </header>
+
+        <section class="blindbox-detail-poster">
+          <figure>
+            <figcaption>包装与小卡设计</figcaption>
+            <img src="assets/works/blindbox-detail/140.png?v=20260717-blindbox-layout" alt="BLIND BOX 包装与小卡设计" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+
+        <section class="blindbox-detail-landscape">
+          <figure>
+            <figcaption>展示风景</figcaption>
+            <img src="assets/works/blindbox-detail/141.png?v=20260717-blindbox-layout" alt="BLIND BOX 展示风景" loading="lazy" decoding="async" />
+          </figure>
+        </section>
+      </article>
+
+      <article class="work-detail-page screen-detail-page" aria-label="大屏 作品详情">
+        <a class="work-detail-back" href="#works">← Works</a>
+
+        <header class="line-detail-hero screen-detail-hero">
+          <img src="assets/works/screen-detail/14.png?v=20260717-screen-layout-2" alt="大屏 主视觉" decoding="async" />
+          <div class="line-detail-intro screen-detail-intro">
+            <h1>大屏</h1>
+            <p class="line-detail-year">2021～2024</p>
+            <p class="screen-detail-role">广告·海报设计</p>
+            <p>
+              为粉丝站设计用于宣传的广告·海报，<br />
+              在中国、韩国的商场、地铁站、公交站等<br />
+              线下公共空间实际投放。
+            </p>
+          </div>
+        </header>
+
+        <section class="screen-detail-group">
+          <p>StrayKids周年纪念广告，展示于首尔2号线建大站。</p>
+          <div class="screen-detail-pair">
+            <figure><img src="assets/works/screen-detail/14.png?v=20260717-screen-layout-2" alt="StrayKids 周年纪念广告展示现场" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/works/screen-detail/150.png?v=20260717-screen-layout-2" alt="StrayKids 周年纪念广告站台展示" loading="lazy" decoding="async" /></figure>
+          </div>
+        </section>
+
+        <section class="screen-detail-group">
+          <p>StrayKids回归宣传广告，展示于首尔2号线与机场铁路弘大站换乘通道。</p>
+          <div class="screen-detail-pair">
+            <figure><img src="assets/works/screen-detail/151.png?v=20260717-screen-layout-2" alt="StrayKids 回归宣传广告通道展示 1" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/works/screen-detail/152.png?v=20260717-screen-layout-2" alt="StrayKids 回归宣传广告通道展示 2" loading="lazy" decoding="async" /></figure>
+          </div>
+        </section>
+
+        <section class="screen-detail-group screen-detail-group-last">
+          <p>李东海生日应援广告，展示于首尔City Vision公交站。</p>
+          <div class="screen-detail-pair">
+            <figure><img src="assets/works/screen-detail/153.png?v=20260717-screen-layout-2" alt="李东海生日应援广告公交站展示 1" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/works/screen-detail/154.png?v=20260717-screen-layout-2" alt="李东海生日应援广告公交站展示 2" loading="lazy" decoding="async" /></figure>
+          </div>
+        </section>
+      </article>
+
+      <footer class="ticker" aria-label="作品分类">
+        <div class="ticker-track">
+          <span class="ticker-group">
+            <span>Video Art；Installation；UI/UX Design；Graphic Design</span>
+            <span>影像；装置；UI／UX；平面</span>
+            <span>映像；インスタレーション ；UI／UX；イラストレーション</span>
+          </span>
+          <span class="ticker-group" aria-hidden="true">
+            <span>Video Art；Installation；UI/UX Design；Graphic Design</span>
+            <span>影像；装置；UI／UX；平面</span>
+            <span>映像；インスタレーション ；UI／UX；イラストレーション</span>
+          </span>
+          <span class="ticker-group" aria-hidden="true">
+            <span>Video Art；Installation；UI/UX Design；Graphic Design</span>
+            <span>影像；装置；UI／UX；平面</span>
+            <span>映像；インスタレーション ；UI／UX；イラストレーション</span>
+          </span>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js?v=20260721-video-close-match"></script>
+  </body>
+</html>
